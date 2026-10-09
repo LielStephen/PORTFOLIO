@@ -323,5 +323,73 @@
       align-items: center;
       justify-content: center;
       font-size: 12.5px;
-      font-weight: 600
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      box-shadow: 0 0 14px rgba(92, 225, 230, 0.25);
+    }
+
+    .desktop-nav {
+      animation: fadeIn 0.9s ease 0.45s backwards;
+      position: static;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .plain-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 0;
+      font-size: 14.5px;
+      color: var(--soft);
+      transition: color 0.25s ease;
+      position: relative;
+    }
+
+    .plain-link:hover,
+    .plain-link.is-active {
+      color: #fff;
+    }
+
+    .plain-link::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #fff;
+      transform: scaleX(0);
+      transition: transform 0.25s ease;
+    }
+
+    .plain-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .actions {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: fadeDown 0.9s var(--ease) 0.55s backwards;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 34px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: #fff;
+      color: #0b0f12;
+
 </style></head><body></body></html>
