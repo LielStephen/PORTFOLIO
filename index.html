@@ -148,5 +148,57 @@
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.07);
       border: 1px solid var(--line);
- 
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4ade80;
+      box-shadow: 0 0 10px #4ade80;
+      animation: pulseDot 2s infinite;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    .hero-name {
+      font-size: clamp(36px, 6.2vw, 74px);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      margin: 0;
+      color: #ffffff;
+      text-shadow: 0 4px 35px rgba(0, 0, 0, 0.7);
+      line-height: 1.1;
+    }
+
+    .hero-role-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      min-height: 44px;
+    }
+
+    .breathing-text {
+      font-size: clamp(17px, 2.8vw, 26px);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(92, 225, 230, 0.2);
+      animation: breathingGlow 3.2s ease-in-out infinite;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      display: inline-block;
+    }
+
+    @keyframes breathingGlow {
+      0%, 100% {
+        opacity: 0.85;
+        trans
 </style></head><body></body></html>
