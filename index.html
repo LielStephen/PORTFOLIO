@@ -741,5 +741,60 @@
     .contact-card p {
       font-size: 16px;
       color: var(--muted);
-      max-widt
+      max-width: 600px;
+      margin: 0 auto 32px auto;
+      line-height: 1.6;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 26px;
+      border-radius: 999px;
+      background: #fff;
+      color: #0b0f12;
+      font-weight: 500;
+      font-size: 14.5px;
+      transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+
+    .btn-primary:hover {
+      background: #e9eef0;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid var(--line);
+      font-weight: 500;
+      font-size: 14.5px;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      transition: background 0.25s, transform 0.25s, border-color 0.25s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 32
 </style></head><body></body></html>
