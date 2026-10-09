@@ -814,6 +814,7 @@
       }
     }
   </style>
+  <!-- Smooth rendering & high frame-rate transitions -->
 </head>
 <body>
 
@@ -1120,5 +1121,47 @@
             roleIndex = (roleIndex + 1) % roles.length;
             roleEl.textContent = roles[roleIndex];
             roleEl.style.opacity = "1";
+            roleEl.style.transform = "translateY(0) scale(1)";
+          }, 400);
+        }, 3400);
+      }
 
-</style></head><body></body></html>
+      // 2. Mobile Sheet Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const sheet = document.getElementById("sheet");
+      const sheetLinks = Array.from(document.querySelectorAll(".sheet-link"));
+
+      if (menuBtn && sheet) {
+        menuBtn.addEventListener("click", () => {
+          const isOpen = sheet.classList.contains("open");
+          if (isOpen) {
+            sheet.classList.remove("open");
+            menuBtn.setAttribute("aria-expanded", "false");
+          } else {
+            sheet.classList.add("open");
+            menuBtn.setAttribute("aria-expanded", "true");
+          }
+        });
+
+        sheetLinks.forEach(link => {
+          link.addEventListener("click", () => {
+            sheet.classList.remove("open");
+            menuBtn.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      // 3. Escape key closes mobile sheet
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && sheet && sheet.classList.contains("open")) {
+          sheet.classList.remove("open");
+          if (menuBtn) {
+            menuBtn.setAttribute("aria-expanded", "false");
+            menuBtn.focus();
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
