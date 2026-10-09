@@ -796,5 +796,41 @@
 
     footer {
       border-top: 1px solid var(--line);
-      padding: 32
+      padding: 32px clamp(20px, 4vw, 52px);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* =====================================================================
+       REDUCED MOTION
+       ===================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01s !important;
+        animation-delay: 0s !important;
+        transition-duration: 0.01s !important;
+        transition-delay: 0s !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =====================================================================
+       HERO SECTION WITH CENTRAL YAMALA LIEL STEPHEN TITLE & TOGGLING TEXT
+       ===================================================================== -->
+  <section class="hero" id="home" aria-label="Yamala Liel Stephen Portfolio">
+    <div class="hero-bg" role="img" aria-label="A turquoise glacial river winding through a volcanic valley toward snow-capped mountains"></div>
+
+    <!-- Header Bar -->
+    <header class="header" id="header">
+      <div class="bar">
+        <!-- Logo -->
+        <a class="logo" href="#home" aria-label="Yamala Liel Stephen">
+          <div class="logo-icon">YLS</div>
+          <span>Liel Stephen</span>
+        </a>
+
+        <!-- Desktop Centre Nav -->
 </style></head><body></body></html>
