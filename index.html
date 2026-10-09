@@ -554,5 +554,70 @@
     .profile-meta {
       display: flex;
       flex-wrap: wrap;
-     
+      gap: 18px;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .profile-meta a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s ease;
+    }
+
+    .profile-meta a:hover {
+      color: var(--accent);
+    }
+
+    .profile-summary {
+      margin-top: 24px;
+      font-size: 16.5px;
+      line-height: 1.68;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 900px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .stat-num {
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* Skills Grid */
+    .section-title {
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 0 0 32px 0;
+      color: #fff;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, m
 </style></head><body></body></html>
