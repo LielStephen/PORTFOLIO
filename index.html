@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yamala Liel Stephen — AI/ML Engineer</title>
-  <meta name="description" content="Portfolio of Yamala Liel Stephen — AI/ML Engineer specializing in Machine Learning Systems, Computer Vision, MLOps, and Backend Architecture.">
+  <meta name="description"
+    content="Portfolio of Yamala Liel Stephen — AI/ML Engineer specializing in Machine Learning Systems, Computer Vision, MLOps, and Backend Architecture.">
 
   <!-- Google Fonts: Geist 400, 500 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +18,14 @@
        1. FONTS & GLOBAL VARIABLES & RESET
        ===================================================================== */
     :root {
-      --ink:   #0b1013;
+      --ink: #0b1013;
       --panel: rgba(14, 19, 23, 0.88);
-      --line:  rgba(255, 255, 255, 0.08);
+      --line: rgba(255, 255, 255, 0.08);
       --hover: rgba(255, 255, 255, 0.065);
-      --text:  #ffffff;
-      --soft:  rgba(255, 255, 255, 0.74);
+      --text: #ffffff;
+      --soft: rgba(255, 255, 255, 0.74);
       --muted: rgba(255, 255, 255, 0.60);
-      --ease:  cubic-bezier(0.22, 1, 0.36, 1);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
       --accent: #5ce1e6;
       --accent-glow: rgba(92, 225, 230, 0.4);
     }
@@ -32,7 +34,8 @@
       box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
       background-color: var(--ink);
@@ -94,6 +97,7 @@
         transform: scale(1.08);
         filter: brightness(0.5);
       }
+
       to {
         transform: scale(1);
         filter: brightness(0.9);
@@ -107,7 +111,7 @@
       z-index: -1;
       pointer-events: none;
       background:
-        linear-gradient(to bottom, rgba(6,10,12,0.45) 0%, rgba(6,10,12,0.15) 30%, rgba(6,10,12,0.6) 80%, rgba(11,16,19,1) 100%);
+        linear-gradient(to bottom, rgba(6, 10, 12, 0.45) 0%, rgba(6, 10, 12, 0.15) 30%, rgba(6, 10, 12, 0.6) 80%, rgba(11, 16, 19, 1) 100%);
     }
 
     /* Hero Center Stage */
@@ -129,6 +133,7 @@
         opacity: 0;
         transform: translateY(20px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -163,8 +168,17 @@
     }
 
     @keyframes pulseDot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(0.85); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.85);
+      }
     }
 
     .hero-name {
@@ -198,11 +212,14 @@
     }
 
     @keyframes breathingGlow {
-      0%, 100% {
+
+      0%,
+      100% {
         opacity: 0.85;
         transform: scale(0.98);
         filter: drop-shadow(0 0 8px rgba(92, 225, 230, 0.3));
       }
+
       50% {
         opacity: 1;
         transform: scale(1.02);
@@ -218,8 +235,15 @@
     }
 
     @keyframes blinkCursor {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
 
     .hero-actions {
@@ -256,6 +280,7 @@
         opacity: 0;
         transform: translate(-50%, 10px);
       }
+
       to {
         opacity: 1;
         transform: translate(-50%, 0);
@@ -286,6 +311,7 @@
         opacity: 0;
         transform: translateY(-8px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -296,6 +322,7 @@
       from {
         opacity: 0;
       }
+
       to {
         opacity: 1;
       }
@@ -806,7 +833,10 @@
        REDUCED MOTION
        ===================================================================== */
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         animation-duration: 0.01s !important;
         animation-delay: 0s !important;
         transition-duration: 0.01s !important;
@@ -815,13 +845,15 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- =====================================================================
        HERO SECTION WITH CENTRAL YAMALA LIEL STEPHEN TITLE & TOGGLING TEXT
        ===================================================================== -->
   <section class="hero" id="home" aria-label="Yamala Liel Stephen Portfolio">
-    <div class="hero-bg" role="img" aria-label="A turquoise glacial river winding through a volcanic valley toward snow-capped mountains"></div>
+    <div class="hero-bg" role="img"
+      aria-label="A turquoise glacial river winding through a volcanic valley toward snow-capped mountains"></div>
 
     <!-- Header Bar -->
     <header class="header" id="header">
@@ -847,7 +879,7 @@
           <a class="cta" href="#contact">Get in Touch</a>
           <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
             <svg viewBox="0 0 16 16" fill="none">
-              <path d="M2 5.5h12M2 10.5h12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M2 5.5h12M2 10.5h12" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
             </svg>
           </button>
         </div>
@@ -901,12 +933,23 @@
             <span>📍 Amaravati, India</span>
             <span>📞 <a href="tel:+91703XXXXXXX">+91 703XXXXXXX</a></span>
             <span>✉️ <a href="mailto:lielstephen@gmail.com">lielstephen@gmail.com</a></span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px; margin-right:4px;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px; margin-right:4px;"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a></span>
+            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+                style="vertical-align:-2px; margin-right:4px;">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></span>
+            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+                style="vertical-align:-2px; margin-right:4px;">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a></span>
           </div>
         </div>
         <div class="profile-summary">
-          Machine Learning Engineer building and deploying production-grade AI/ML systems for healthcare, computer vision, and NLP-based grading with Python, PyTorch, FastAPI, Docker, and AWS. Delivered 94.8% model accuracy, improved inference latency by 60%, achieved 92% human-score correlation, and supported 50,000+ monthly API requests with sub-100ms response times.
+          Machine Learning Engineer building and deploying production-grade AI/ML systems for healthcare, computer
+          vision, and NLP-based grading with Python, PyTorch, FastAPI, Docker, and AWS. Delivered 94.8% model accuracy,
+          improved inference latency by 60%, achieved 92% human-score correlation, and supported 50,000+ monthly API
+          requests with sub-100ms response times.
         </div>
         <div class="stats-grid">
           <div class="stat-card">
@@ -1013,7 +1056,10 @@
             </div>
             <div class="project-stack">Co-Founder &amp; Chief Technology Officer (CTO)</div>
             <p class="project-desc">
-              Led architecture and delivery for an AI-powered SaaS platform using Node.js, Express.js, TypeScript, React, and MongoDB, sustaining 50,000+ monthly API requests. Built AWS infrastructure with Terraform, ECS, Docker, and GitHub Actions, cutting deployment time by 45% and placing 2nd among 150+ teams at the VITAURA ’25 Startup Pitch.
+              Led architecture and delivery for an AI-powered SaaS platform using Node.js, Express.js, TypeScript,
+              React, and MongoDB, sustaining 50,000+ monthly API requests. Built AWS infrastructure with Terraform, ECS,
+              Docker, and GitHub Actions, cutting deployment time by 45% and placing 2nd among 150+ teams at the VITAURA
+              ’25 Startup Pitch.
             </p>
           </div>
           <div class="pill-list">
@@ -1032,7 +1078,9 @@
             </div>
             <div class="project-stack">Python, FastAPI, Docker, Redis, PyTorch, OpenCV</div>
             <p class="project-desc">
-              Engineered a multimodal computer-vision ML platform combining ultrasound imaging and clinical inputs, achieving 94.8% accuracy in PCOS risk categorization. Deployed a FastAPI inference service with ONNX Runtime optimization and Redis caching, cutting latency by 60% to 120ms per scan.
+              Engineered a multimodal computer-vision ML platform combining ultrasound imaging and clinical inputs,
+              achieving 94.8% accuracy in PCOS risk categorization. Deployed a FastAPI inference service with ONNX
+              Runtime optimization and Redis caching, cutting latency by 60% to 120ms per scan.
             </p>
           </div>
           <div class="pill-list">
@@ -1051,7 +1099,8 @@
             </div>
             <div class="project-stack">Python, FastAPI, EasyOCR, Sentence-Transformers</div>
             <p class="project-desc">
-              Built an NLP-based OCR and semantic-similarity grading pipeline using EasyOCR and Sentence-Transformers, reaching 92% correlation with human evaluator scores and reducing manual grading time by 60%.
+              Built an NLP-based OCR and semantic-similarity grading pipeline using EasyOCR and Sentence-Transformers,
+              reaching 92% correlation with human evaluator scores and reducing manual grading time by 60%.
             </p>
           </div>
           <div class="pill-list">
@@ -1068,22 +1117,35 @@
       <div class="contact-card">
         <div class="section-tag">Get in Touch</div>
         <h2>Ready to collaborate on next-generation AI?</h2>
-        <p>Whether you're exploring custom machine learning models, low-latency inference pipelines, or high-scale cloud architectures, let's connect and build something exceptional.</p>
+        <p>Whether you're exploring custom machine learning models, low-latency inference pipelines, or high-scale cloud
+          architectures, let's connect and build something exceptional.</p>
         <div class="contact-buttons">
           <a href="mailto:lielstephen@gmail.com" class="btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
             lielstephen@gmail.com
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
             LinkedIn
           </a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+            </svg>
             GitHub
           </a>
           <a href="tel:+91703XXXXXXX" class="btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
             +91 703XXXXXXX
           </a>
         </div>
@@ -1163,4 +1225,5 @@
     })();
   </script>
 </body>
+
 </html>
